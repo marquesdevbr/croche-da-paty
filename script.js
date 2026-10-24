@@ -256,6 +256,23 @@ if (lightbox && galeriaItens.length) {
     });
 }
 
+// ---------- Chat de atendimento (Botpress) ----------
+
+// Carrega o chat em todas as páginas que usam o script.js.
+// Para trocar o bot, basta atualizar os dois endereços abaixo
+// (Botpress > Channels > Webchat > Embed on your website).
+const BOTPRESS_SCRIPTS = [
+    "https://cdn.botpress.cloud/webchat/v5.0/inject.js",
+    "https://files.bpcontent.cloud/2026/10/24/14/20261024140545-W3S1YI3M.js"
+];
+
+BOTPRESS_SCRIPTS.forEach((endereco) => {
+    const scriptChat = document.createElement("script");
+    scriptChat.src = endereco;
+    // async = false mantém a ordem: o inject.js precisa carregar antes do segundo arquivo
+    scriptChat.async = false;
+    document.body.appendChild(scriptChat);
+});
 
 // ---------- Menu mobile ----------
 
