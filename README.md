@@ -115,18 +115,18 @@ Crochê da Paty/
 Clone o repositório:
 
 ```bash
-git clone https://github.com/MarquesDevBR/Croche-da-Paty.git
+git clone https://github.com/MarquesDevBR/croche-da-paty.git
 ```
 
 Entre na pasta do projeto:
 
 ```bash
-cd Croche-da-Paty
+cd croche-da-paty
 ```
 
 Depois, basta abrir o arquivo `index.html` em um navegador.
 
-O site publicado está em: https://marquesdevbr.github.io/Croche-da-Paty/
+O site publicado está em: https://marquesdevbr.github.io/croche-da-paty/
 
 Também é possível utilizar uma extensão como o **Live Server** no Visual Studio Code para executar o projeto durante o desenvolvimento.
 
